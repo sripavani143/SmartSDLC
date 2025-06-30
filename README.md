@@ -100,7 +100,7 @@ smart-sdlc/
 ├── .github/                         # 🔧 GitHub
 
 
-⚙ Installation & Setup
+## Installation & Setup
 
 Smart SDLC is designed to run as a full-stack application with:
 
@@ -110,7 +110,7 @@ Smart SDLC is designed to run as a full-stack application with:
 
 🐳 Optional: Dockerized deployment
 
-🔧 Prerequisites
+## Prerequisites
 
 Make sure the following are installed:
 
@@ -195,7 +195,7 @@ Smart SDLC combines the traditional Software Development Life Cycle with AI auto
 
 📍 Step-by-Step Working
 
-1️⃣ Requirement Phase
+## 1️⃣ Requirement Phase
 
 User submits a user story or high-level feature idea.
 
@@ -209,7 +209,7 @@ Suggest use cases
 
 ✅ Output: Structured table with all requirement components.
 
-2️⃣ Design & Planning Phase
+## 2️⃣ Design & Planning Phase
 
 DesignAgent suggests:
 
@@ -225,7 +225,7 @@ Predict effort, timeline, and cost.
 
 ✅ Output: Technical design + Effort estimate report
 
-3️⃣ Development Phase
+## 3️⃣ Development Phase
 
 CodeAgent (LLM-powered) auto-generates:
 
@@ -237,7 +237,7 @@ CRUD operations based on schema
 
 ✅ Output: Auto-generated starter code
 
-4️⃣ Testing Phase
+## 4️⃣ Testing Phase
 
 TestAgent produces:
 
@@ -255,7 +255,7 @@ Flag risky functions
 
 ✅ Output: Executable test cases + test report
 
-5️⃣ Deployment Phase
+## 5️⃣ Deployment Phase
 
 Code pushed to GitHub triggers:
 
@@ -273,7 +273,7 @@ Change impact
 
 ✅ Output: Release log, version info, risk level
 
-6️⃣ Maintenance & Monitoring Phase
+## 6️⃣ Maintenance & Monitoring Phase
 
 AI scans logs, issues, user feedback.
 
@@ -287,7 +287,7 @@ Bug prediction from commit history
 
 ✅ Output: Maintenance suggestions + patch recommendations
 
-7️⃣ Feedback Loop
+## 7️⃣ Feedback Loop
 
 User corrections and feedback are stored (optionally).
 
