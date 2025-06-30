@@ -50,32 +50,32 @@ Smart SDLC is a next-generation AI-powered software development framework that i
 
 ## 🧬 Project Structure
 smart-sdlc/
-├── app/                             # 🔁 Backend application logic
-│   ├── main.py                      # FastAPI entry point
-│   ├── config.py                    # Environment and API configuration
-│   ├── routes/                      # API routes for frontend-backend communication
-│   ├── agents/                      # AI agents (RequirementAgent, TestAgent, etc.)
+├── app/                             
+│   ├── main.py                      
+│   ├── config.py                   
+│   ├── routes/                    
+│   ├── agents/     
 │   │   ├── _init_.py
 │   │   ├── requirement_agent.py
 │   │   ├── test_agent.py
 │   │   ├── code_agent.py
 │   │   └── deployment_agent.py
-│   ├── models/                      # ML models and pre-processing pipelines
+│   ├── models/                      
 │   │   ├── effort_estimator.py
 │   │   ├── test_generator.py
 │   │   └── bug_predictor.py
-│   ├── services/                    # External integration logic (GitHub, Jira, etc.)
+│   ├── services/                    
 │   │   ├── github_service.py
 │   │   ├── jira_service.py
 │   │   └── vector_store_service.py
-│   ├── pipelines/                   # CI/CD automation pipelines
+│   ├── pipelines/                   
 │   │   ├── code_analysis.py
 │   │   └── test_runner.py
-│   ├── utils/                       # Utility functions, prompt builders, etc.
+│   ├── utils/                       
 │   │   ├── prompt_templates.py
 │   │   ├── text_cleaning.py
 │   │   └── logger.py
-│   └── data/                        # Embeddings, datasets, input examples
+│   └── data/                       
 │       ├── embeddings/
 │       ├── user_stories/
 │       └── metrics/
@@ -84,20 +84,20 @@ smart-sdlc/
 │   ├── public/
 │   ├── pages/
 │   ├── components/
-│   ├── assets/                      # Images, icons, SVGs
-│   └── utils/                       # Fetch functions, config
+│   ├── assets/                      
+│   └── utils/                       
 │
-├── tests/                           # ✅ Unit and integration tests
+├── tests/                           
 │   ├── test_agents.py
 │   ├── test_api.py
 │   └── test_models.py
 │
-├── scripts/                         # 🛠 Deployment, seeding, DB init scripts
+├── scripts/                         
 │   ├── init_db.py
 │   ├── generate_mock_data.py
 │   └── start_local.sh
 │
-├── .github/                         # 🔧 GitHub
+├── .github/                         
 
 
 ## 🛠 How Smart SDLC Works
