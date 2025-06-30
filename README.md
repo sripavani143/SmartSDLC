@@ -100,84 +100,11 @@ smart-sdlc/
 ├── .github/                         # 🔧 GitHub
 
 
-## Installation & Setup
-
-Smart SDLC is designed to run as a full-stack application with:
-
-🧠 Python FastAPI backend (AI + ML logic)
-
-🌐 React dashboard frontend
-
-🐳 Optional: Dockerized deployment
-
-## Prerequisites
-
-Make sure the following are installed:
-
-Tool	Version Recommended	Install Link
-
-Python	3.10+	python.org
-Node.js + npm	Node 18+	nodejs.org
-Git	Latest	git-scm.com
-Docker	(Optional)	docker.com
-OpenAI API Key	Required	platform.openai.com
-
-🧠 Backend Setup (FastAPI)
-
-1. Clone the repository:
-git clone https://github.com/your-username/smart-sdlc.git
-cd smart-sdlc
-
-2. Create a virtual environment & activate it:
-python -m venv venv
-source venv/bin/activate       # On Windows: venv\Scripts\activate
-
-3. Install dependencies:
-pip install -r requirements.txt
-
-4. Set your environment variables:
-Create a .env file in the app/ directory with the following:
-OPENAI_API_KEY=your-api-key
-PINECONE_API_KEY=your-pinecone-key  # if using vector DB
-DEBUG=True
-
-5. Run the backend server:
-uvicorn app.main:app --reload
-
-> 🟢 API available at: http://127.0.0.1:8000/docs (FastAPI Swagger UI)
-
-🌐 Frontend Setup (React Dashboard)
-
-1. Navigate to the dashboard directory:
-cd dashboard
-
-2. Install dependencies:
-npm install
-
-3. Run the development server:
-npm run dev
-
-> 🟢 Dashboard accessible at: http://localhost:8051
-
-🐳 Optional: Run With Docker (Full Stack)
-
-1. Build and start containers:
-docker-compose up --build
-
-2. Backend will run on http://localhost:8000
-Frontend will run on http://localhost:3000
-
-✅ Test the Setup
-
-1. Open http://localhost:8051 — frontend dashboard.
-2. Navigate to http://localhost:8052/docs — backend API interface.
-3. Upload a sample user story and let the AI generate SDLC elements!
-
-🛠 How Smart SDLC Works
+## 🛠 How Smart SDLC Works
 
 Smart SDLC combines the traditional Software Development Life Cycle with AI automation. Each phase is handled by a dedicated AI agent that performs intelligent tasks to save time, reduce manual effort, and improve quality.
 
-🔄 Workflow Overview
+## 🔄 Workflow Overview
 
 [ User Input ] 
      ↓
@@ -193,115 +120,15 @@ Smart SDLC combines the traditional Software Development Life Cycle with AI auto
      ↓
 [ Monitoring + Feedback Loop ]
 
-📍 Step-by-Step Working
+## Summary Table
 
-## 1️⃣ Requirement Phase
+Phase	               Traditional Output	                 Smart SDLC Output
 
-User submits a user story or high-level feature idea.
-
-RequirementAgent uses GPT-4 to:
-
-Extract functional & non-functional requirements
-
-Generate acceptance criteria
-
-Suggest use cases
-
-✅ Output: Structured table with all requirement components.
-
-## 2️⃣ Design & Planning Phase
-
-DesignAgent suggests:
-
-Architecture pattern (e.g., MVC, microservices)
-
-Data flow diagrams
-
-Technology stack
-
-EstimationAgent uses ML (XGBoost) to:
-
-Predict effort, timeline, and cost.
-
-✅ Output: Technical design + Effort estimate report
-
-## 3️⃣ Development Phase
-
-CodeAgent (LLM-powered) auto-generates:
-
-Boilerplate code
-
-API endpoints
-
-CRUD operations based on schema
-
-✅ Output: Auto-generated starter code
-
-## 4️⃣ Testing Phase
-
-TestAgent produces:
-
-Unit tests
-
-Integration tests
-
-Edge-case test coverage
-
-Uses static analysis to:
-
-Identify missing tests
-
-Flag risky functions
-
-✅ Output: Executable test cases + test report
-
-## 5️⃣ Deployment Phase
-
-Code pushed to GitHub triggers:
-
-GitHub Actions (CI/CD pipeline)
-
-Linting + testing + build + deploy
-
-DeploymentAgent analyzes:
-
-Code readiness
-
-Release risk
-
-Change impact
-
-✅ Output: Release log, version info, risk level
-
-## 6️⃣ Maintenance & Monitoring Phase
-
-AI scans logs, issues, user feedback.
-
-Detects:
-
-Performance degradation
-
-Frequent failure areas
-
-Bug prediction from commit history
-
-✅ Output: Maintenance suggestions + patch recommendations
-
-## 7️⃣ Feedback Loop
-
-User corrections and feedback are stored (optionally).
-
-Used to:
-
-Improve future outputs
-
-Retrain ML models
-
-Refine prompts via reinforcement learning
-
-✅ Output: Continually improving AI performance
-
-🧠 Core Logic Behind the Scenes
-
-Agent/Module	Technology Used
+Requirement	         Word docs,unstructured text	       Structured tables,traceability,use cases
+Design	              Diagrams,text documents	            AI-suggested patterns,visual UML/DFD
+Implementation	         Manual code	                      AI-generated boilerplate + CRUD + helpers
+Testing	              Manual test scripts	                 AI-generated unit/integration test cases
+Deployment	         Shell scripts,pipelines	            CI/CD automation + risk prediction
+Maintenance	         Logs,manual debugging	            AI-analyzed bugs,predictive diagnostics
+Feedback Loop (AI)	    Rarely implemented	                 Continuous learning from feedback & outcomes
 
